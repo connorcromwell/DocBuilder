@@ -10,7 +10,7 @@ from reportlab.lib.utils import ImageReader
 
 
 st.set_page_config(
-    page_title="Doc Builder",
+    page_title="DocBuilder",
     layout="centered",
 )
 
