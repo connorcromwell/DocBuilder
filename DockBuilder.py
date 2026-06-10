@@ -10,7 +10,7 @@ from reportlab.lib.utils import ImageReader
 
 
 st.set_page_config(
-    page_title="Conditional Documentation Builder",
+    page_title="Doc Builder",
     layout="centered",
 )
 
@@ -187,7 +187,7 @@ def build_pdf(site_layout_image, image_codes):
     return buffer
 
 
-st.title("Conditional Documentation Builder")
+st.title("Doc Builder")
 
 st.subheader("Upload Site Layout Drawing")
 st.write(
@@ -236,8 +236,8 @@ if st.button("Generate PDF", disabled=generate_disabled):
     pdf_file = build_pdf(site_layout_image, image_codes)
 
     st.download_button(
-        label="Download Landscape PDF",
+        label="Download PDF",
         data=pdf_file,
-        file_name="conditional_documentation.pdf",
+        file_name="CustomerReadinessChecklist.pdf",
         mime="application/pdf",
     )
